@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="co.unipiloto.transportes_project">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pruebas"
+        tools:targetApi="31">
+        <activity
+            android:name=".VerVehiculosConductor"
+            android:exported="false" />
+        <activity
+            android:name=".VerRegistrosViajesPropietario"
+            android:exported="false" />
+        <activity
+            android:name=".MapaConOdometro"
+            android:exported="false" />
+        <activity
+            android:name=".EditarVehiculo"
+            android:exported="false" />
+        <activity
+            android:name=".VerSolicitudesAceptadas"
+            android:exported="false" />
+        <activity
+            android:name=".informeDeLlegada"
+            android:exported="false" />
+        <activity
+            android:name=".EditarCargaActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".NuevoServicioSolicitudCarga"
+            android:exported="false" />
+        <service
+            android:name=".OdometerService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCBfnmxhkzv-sCi3wUxHsMyrbObETqp7E0" />
+
+        <activity
+            android:name=".Localizacion.Mapas"
+            android:exported="false" />
+        <activity
+            android:name=".Localizacion.Navegacion"
+            android:exported="false" />
+        <activity
+            android:name=".HacerSolicitudCarga"
+            android:exported="false" />
+        <activity
+            android:name=".AceptarSolicitudes"
+            android:exported="false" />
+        <activity
+            android:name=".RecuperarPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Registros.VerRegistrosViajes"
+            android:exported="false" />
+        <activity
+            android:name=".Registros.VerRegistrosVehiculos"
+            android:exported="false" />
+        <activity
+            android:name=".Registros.RegistrarVehiculo"
+            android:exported="false" />
+        <activity
+            android:name=".Registros.RegistrarViaje"
+            android:exported="false" />
+        <activity
+            android:name=".Registros.VerRegistrosCarga"
+            android:exported="false" />
+        <activity
+            android:name=".Registros.RegistrarCarga"
+            android:exported="false" />
+        <activity
+            android:name=".main.MainConductor"
+            android:exported="false" />
+        <activity
+            android:name=".main.mainPropietarioVehiculo"
+            android:exported="false" />
+        <activity
+            android:name=".main.MainPropietarioCarga"
+            android:exported="false" />
+        <activity android:name=".SignupForm" />
+        <activity
+            android:name=".LoginForm"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

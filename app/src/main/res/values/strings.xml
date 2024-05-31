@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">pruebas</string>
+    <string-array name="roles">
+        <item>Propietario de carga</item>
+        <item>Propietario de vehiculo</item>
+        <item>Conductor</item>
+    </string-array>
+    <string-array name="opciones_estado_carga">
+        <item>Disponible</item>
+        <item>Solicitada</item>
+        <item>Aceptada</item>
+        <item>Rechazada</item>
+    </string-array>
+    <string-array name="Transmisión">
+        <item>Manual</item>
+        <item>Automatica</item>
+    </string-array>
+    <string-array name="menu_options">
+        <item>Aceptar</item>
+        <item>Rechazar</item>
+    </string-array>
+    <string-array name="estados">
+        <item>Disponible</item>
+        <item>Ocupado</item>
+    </string-array>
+</resources>
